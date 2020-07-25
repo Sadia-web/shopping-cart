@@ -102,29 +102,29 @@
          }
 
          function calculateTotal() {
-         const phoneCount = getInputValue('phone');
-         const caseCount = getInputValue('case');
+            const phoneCount = getInputValue('phone');
+            const caseCount = getInputValue('case');
 
-         const totalPrice = phoneCount * 1219 + caseCount * 59;
-         document.getElementById('total-price').innerText = '$' + totalPrice;
+            const totalPrice = phoneCount * 1219 + caseCount * 59;
+            document.getElementById('total-price').innerText = '$' + totalPrice;
 
-         const tax = Math.round(totalPrice * 0.1);
-         document.getElementById('tax-amount').innerText = '$' + tax;
+            const tax = Math.round(totalPrice * 0.1);
+            document.getElementById('tax-amount').innerText = '$' + tax;
 
-         const grandTotal = totalPrice + tax;
-         document.getElementById('grand-total').innerText = '$' + grandTotal;
+            const grandTotal = totalPrice + tax;
+            document.getElementById('grand-total').innerText = '$' + grandTotal;
          }
 
          function getInputValue(product) {
-         console.log(product);
-         const productInput = document.getElementById(product + '-count');
-         const productCount = parseInt(productInput.value);
-         return productCount;
+            console.log(product);
+            const productInput = document.getElementById(product + '-count');
+            const productCount = parseInt(productInput.value);
+            return productCount;
          }
          const checkOutButton = document.getElementById("checkBtn");
          checkOutButton.addEventListener("click", function(){
             alert("Thanks for Shopping with us!")
-         })
+         });
       
    </script>
    
